@@ -48,6 +48,13 @@ if __name__ == '__main__':
         help = 'A boolean option.',
     )
 
+    parser.add_argument(
+        '-q', '--quiet',
+        type = float,
+        default = 3.4,
+        help = 'A super duper important threshold.',
+    )
+
     # Parse the command-line arguments into a 'dict'-like container
     args = parser.parse_args()
 
