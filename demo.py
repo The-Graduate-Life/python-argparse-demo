@@ -49,10 +49,10 @@ if __name__ == '__main__':
     )
 
     parser.add_argument(
-        '-q', '--quiet',
-        type = float,
-        default = 3.4,
-        help = 'A super duper important threshold.',
+        "-q",
+        "--quiet",
+        action="store_true",
+        help="Suppress normal output"
     )
 
     # Parse the command-line arguments into a 'dict'-like container
